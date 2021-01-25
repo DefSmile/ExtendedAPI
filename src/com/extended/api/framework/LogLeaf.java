@@ -1,4 +1,4 @@
-package com.extended;
+package com.extended.api.framework;
 import com.epicbot.api.shared.APIContext;
 import com.epicbot.api.shared.script.tree.LeafTask;
 
