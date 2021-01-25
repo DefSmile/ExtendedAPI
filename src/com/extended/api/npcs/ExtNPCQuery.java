@@ -1,4 +1,4 @@
-package com.extended.api;
+package com.extended.api.npcs;
 
 import com.epicbot.api.shared.APIContext;
 import com.epicbot.api.shared.entity.NPC;
