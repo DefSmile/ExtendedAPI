@@ -1,4 +1,4 @@
-package com.extended.api.framework;
+package com.extended.api.Framework;
 import com.epicbot.api.shared.APIContext;
 import com.epicbot.api.shared.script.tree.BranchTask;
 import com.epicbot.api.shared.script.tree.TreeTask;
@@ -13,12 +13,13 @@ public abstract class LogBranch extends BranchTask {
 
     @Override
     protected TreeTask createSuccessTask(APIContext ctx) {
+        ctx.script().logger().info(" [Branch][SUCCESS] --> " + getClass().getSimpleName());
         return doCreateSuccessTask(ctx);
     }
 
     @Override
     protected TreeTask createFailureTask(APIContext ctx) {
-        System.out.println("[Branch] " + getClass().getSimpleName() + " --> Failure");
+        ctx.script().logger().info(" [Branch][FAIL] --> " + getClass().getSimpleName());
         return doCreateFailureTask(ctx);
     }
 }

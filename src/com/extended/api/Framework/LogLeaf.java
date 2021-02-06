@@ -1,4 +1,4 @@
-package com.extended.api.framework;
+package com.extended.api.Framework;
 import com.epicbot.api.shared.APIContext;
 import com.epicbot.api.shared.script.tree.LeafTask;
 
@@ -10,7 +10,7 @@ public abstract class LogLeaf extends LeafTask {
 
     @Override
     public void execute() {
-        System.out.println("[Leaf] " + getClass().getSimpleName() + " --> Executed");
+        ctx.script().logger().info("[Leaf] " + getClass().getSimpleName() + " --> Executed");
 
         doExecute();
     }
