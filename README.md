@@ -1,4 +1,4 @@
-# ExtendedAPI
+# ExAPI
 Unofficial open source Epicbot extended API
 This API is in no way owned or managed by the official Epicbot team and is separate from the main Epicbot API
 
