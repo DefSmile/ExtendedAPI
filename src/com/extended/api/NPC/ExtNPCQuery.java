@@ -1,13 +1,11 @@
-package com.extended.api.npcs;
+package com.extended.api.NPC;
 
 import com.epicbot.api.shared.APIContext;
 import com.epicbot.api.shared.entity.NPC;
 import com.epicbot.api.shared.query.NPCQueryBuilder;
-import com.epicbot.api.shared.query.result.LocatableEntityQueryResult;
 
 public class ExtNPCQuery {
-
-    // Look up through names
+    
     public NPC getNearestNPC(String name, APIContext ctx) { return ctx.npcs().query().nameMatches(name).results().nearest(); }
 
     public NPC getNearestNPC(String name, String action, APIContext ctx) { return ctx.npcs().query().nameMatches(name).actions(action).results().nearest(); }

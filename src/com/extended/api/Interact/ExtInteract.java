@@ -1,4 +1,4 @@
-package com.extended.api.interact;
+package com.extended.api.Interact;
 import com.epicbot.api.shared.APIContext;
 import com.epicbot.api.shared.entity.*;
 import com.epicbot.api.shared.entity.details.Interactable;

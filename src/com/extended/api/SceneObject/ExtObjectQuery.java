@@ -1,4 +1,4 @@
-package com.extended.api.gameobjects;
+package com.extended.api.SceneObject;
 
 import com.epicbot.api.shared.APIContext;
 import com.epicbot.api.shared.entity.SceneObject;
