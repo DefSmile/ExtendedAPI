@@ -3,7 +3,7 @@ package com.extended.api.Bank;
 import com.epicbot.api.shared.model.Area;
 import com.epicbot.api.shared.model.Tile;
 
-public enum Locations {
+public enum Banks {
     VARROCK_WEST("Varrock West", new Area(new Tile(3180, 3444, 0), new Tile(3185, 3437, 0)), false),
     VARROCK_EAST("Varrock East", new Area(new Tile(3250, 3424, 0), new Tile(3257, 3416, 0)), false),
     LUMBRIDGE("Lumbridge", new Area(new Tile(3207, 3219, 2), new Tile(3210, 3218, 2)), false),
@@ -25,7 +25,7 @@ public enum Locations {
     private Area bankArea;
     private boolean members;
 
-    Locations(String name, Area bankArea, boolean members) {
+    Banks(String name, Area bankArea, boolean members) {
         this.name = name;
         this.bankArea = bankArea;
         this.members = members;
